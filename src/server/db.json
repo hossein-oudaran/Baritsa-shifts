@@ -1,0 +1,17 @@
+{
+  "Baristas": [
+    {
+      "name": "behrad",
+      "id": 1,
+      "shifts": {
+        "saturday": "morning",
+        "sunday": "afternoon",
+        "monday": "morning",
+        "tuseday": "morning",
+        "thuresday": "morning",
+        "wednesday": "morning",
+        "friday": "morning"
+      }
+    }
+  ]
+}
