@@ -16,7 +16,7 @@ function App() {
   return (
     <BaristaProvider>
       <Router>
-        <div className=" h-32 flex justify-end w-full">
+        <div className=" h-32 flex justify-end w-full ">
           <img src="../public/logo.png" alt="mon-logo" className="ml-4" />
         </div>
         <Routes>
