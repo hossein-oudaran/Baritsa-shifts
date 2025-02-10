@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import { BaristaProvider } from "./context/BaristaContext";
 import LoginPage from "./components/login";
-import BaristaShiftForm from "./features/Baristas/BaristaShiftForm";
-import BaristShiftsList from "./features/Baristas/BaristShiftsList";
+import BaristaShiftForm from "/features/Baristas/BaristaShiftForm";
+import BaristShiftsList from "/features/Baristas/BaristShiftsList";
 
 function App() {
   const isAuthenticated = localStorage.getItem("isAuthenticated");
