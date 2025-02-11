@@ -1,12 +1,16 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // build: {
-  //   rollupOptions: {
-  //     external: ['./features/Baristas/BaristaShiftForm']
-  //   }
-  // }
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  build: {
+    rollupOptions: {
+      external: []
+    }
+  }
 });
