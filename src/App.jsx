@@ -1,14 +1,14 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate,
 } from "react-router-dom";
 import { BaristaProvider } from "./context/BaristaContext";
 import LoginPage from "./components/login";
-import BaristaShiftForm from "./features/Baristas/BaristaShiftForm.jsx";
-import BaristShiftsList from "./features/Baristas/BaristShiftsList.jsx";
+import BaristaShiftForm from "./features/Baristas/BaristaShiftForm";
+import BaristShiftsList from "./features/Baristas/BaristShiftsList";
 
 function App() {
   const isAuthenticated = localStorage.getItem("isAuthenticated");
@@ -16,7 +16,7 @@ function App() {
   return (
     <BaristaProvider>
       <Router>
-        <div className=" h-32 flex justify-end w-full ">
+        <div className="h-32 flex justify-end w-full">
           <img src="../public/logo.png" alt="mon-logo" className="ml-4" />
         </div>
         <Routes>
@@ -30,7 +30,7 @@ function App() {
                     <div className="col-span-5">
                       <BaristaShiftForm />
                     </div>
-                    <div className="col-span-7 print:col-span-12 ">
+                    <div className="col-span-7 print:col-span-12">
                       <BaristShiftsList />
                     </div>
                   </div>
